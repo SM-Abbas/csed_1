@@ -5540,7 +5540,7 @@ a.badge-info:hover, a.badge-info:focus {
 
 a.badge-info:focus, a.badge-info.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(18, 137, 167, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(59, 152, 176, 0.5);
 }
 
 .badge-warning {
@@ -5550,22 +5550,22 @@ a.badge-info:focus, a.badge-info.focus {
 
 a.badge-warning:hover, a.badge-warning:focus {
   color: #fff;
-  background-color: #cf4310;
+  background-color: #e35725;
 }
 
 a.badge-warning:focus, a.badge-warning.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(238, 90, 36, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(202, 88, 46, 0.5);
 }
 
 .badge-danger {
   color: #fff;
-  background-color: #eb4d4b;
+  background-color: #c05655;
 }
 
 a.badge-danger:hover, a.badge-danger:focus {
   color: #fff;
-  background-color: #e6201d;
+  background-color: #f73e3b;
 }
 
 a.badge-danger:focus, a.badge-danger.focus {
@@ -5580,7 +5580,7 @@ a.badge-danger:focus, a.badge-danger.focus {
 
 a.badge-light:hover, a.badge-light:focus {
   color: #1b1b1b;
-  background-color: #dae0e5;
+  background-color: #c1ced8;
 }
 
 a.badge-light:focus, a.badge-light.focus {
@@ -11410,7 +11410,7 @@ textarea.form-control {
   position: relative;
   height: 100vh;
   min-height: 500px;
-  background: url(../imgs/header.jpg) no-repeat center center fixed;
+  background: url("") no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
 }
@@ -11736,3 +11736,113 @@ textarea.form-control {
   opacity: 1;
   visibility: visible;
 }
+
+
+
+
+/* Social icons */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  align-items: center;
+  margin: 20px 90px;
+  overflow: hidden;
+  background:#00cec9;
+  border-radius: 80px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover {
+  width: 200px;
+}
+
+.wrapper .button .icon {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+  background: #1DA1F2;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+  background: #E1306C;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+  background: #0e76a8;
+}
+
+.wrapper .button:nth-child(4):hover .icon {
+  background: #ff0000;
+}
+
+.wrapper .button:nth-child(5):hover .icon {
+  background: #333;
+}
+
+.wrapper .button:nth-child(6):hover .icon {
+  background: #333;
+}
+
+.wrapper .button .icon i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover .icon i {
+  color:#042129;
+}
+
+.wrapper .button span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1) span {
+  color: #1DA1F2;
+}
+
+.wrapper .button:nth-child(2) span {
+  color: #E1306C;
+}
+
+.wrapper .button:nth-child(3) span {
+  color: #0e76a8;
+}
+
+.wrapper .button:nth-child(4) span {
+  color: #ff0000;
+}
+
+.wrapper .button:nth-child(5) span {
+  color: #333;
+}
+
+.wrapper .button:nth-child(6) span {
+  color: #333;
+}
+
