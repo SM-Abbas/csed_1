@@ -40,3 +40,8 @@ $(window).on("load", function() {
         }), !1
     })
 })
+
+$('input').on('change', function() {
+    $('body').toggleClass('blue');
+  });
+  
