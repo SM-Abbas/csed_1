@@ -2420,7 +2420,7 @@ pre code {
   color: #495057;
   background-color: transparent;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #b8cce0;
   border-radius: 0;
   -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -5607,7 +5607,7 @@ input[type="button"].btn-block {
 
 @media (min-width: 576px) {
   .card-deck {
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
@@ -5816,7 +5816,7 @@ input[type="button"].btn-block {
 
 .page-link:hover {
   z-index: 2;
-  color: #f53900;
+  color: #d38d78;
   text-decoration: none;
   background-color: rgba(255, 110, 66, 0.3);
   border-color: transparent;
@@ -7395,12 +7395,9 @@ input[type=radio] {
   #item-3:checked~.cardss #song-2 {
     transform: translatex(-40%) scale(.8);
     opacity: .4;
-    z-index: 0;
-    background-image: url("./img/WhatsApp Image 2022-09-23 at 10.13.35 PM.jpeg");
-    background-repeat: no-repeat !important;
-    background-position: center;
-    background-size: cover;
-    border-radius: 3%;
+    z-index: -1;
+   
+    
   }
 
   #item-1:checked~.cardss #song-2,
@@ -7408,12 +7405,9 @@ input[type=radio] {
   #item-3:checked~.cardss #song-1 {
     transform: translatex(40%) scale(.8);
     opacity: .4;
-    z-index: 0;
-    background-image: url("./img/WhatsApp Image 2022-09-23 at 10.13.35 PM.jpeg");
-    background-repeat: no-repeat !important;
-    background-position: center;
-    background-size: cover;
-    border-radius: 3%;
+    z-index: -1;
+    
+    
   }
 
   #item-1:checked~.cardss #song-1,
@@ -7421,13 +7415,22 @@ input[type=radio] {
   #item-3:checked~.cardss #song-3 {
     transform: translatex(0) scale(1);
     opacity: 1;
-    z-index: 1;
-    background-image: url("./img/WhatsApp Image 2022-09-23 at 10.13.35 PM.jpeg");
-    background-repeat: no-repeat !important;
-    background-position: center;
-    background-size: cover;
-    border-radius: 3%;
+    z-index: -1;
+
+    
   }
+
+  .text_s {
+    background: transparent;
+    text-align: center;
+    font-size: medium;
+    padding: 3%;
+    color: white;
+    scroll-margin-top: 90%;
+    
+  }
+
+
 
 }
 
@@ -7438,7 +7441,7 @@ input[type=radio] {
   padding: 3%;
   color: white;
   position: relative;
-  margin-top: 55%;
+ 
 }
 
 .image {
@@ -7448,30 +7451,24 @@ input[type=radio] {
   object-fit: cover;
   box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
 }
-
+/*
 #item-1:checked~.cardss #song-3,
 #item-2:checked~.cardss #song-1,
 #item-3:checked~.cardss #song-2 {
   transform: translatex(-40%) scale(.8);
   opacity: .4;
   z-index: 0;
-  background-image: url("https://wallpapercave.com/dwp2x/wp3255731.jpg");
-  background-repeat: no-repeat !important;
-  background-position: top center;
-  background-size: auto;
+  
 }
 
-#item-1:checked~.cardss #song-2,
-#item-2:checked~.cardss #song-3,
-#item-3:checked~.cardss #song-1 {
-  transform: translatex(40%) scale(.8);
+
+#item-1:checked ~ .cardss #song-3, #item-2:checked ~ .cardss #song-1, #item-3:checked ~ .cardss #song-2 {
+  transform: translatex(-40%) scale(.8);
   opacity: .4;
   z-index: 0;
-  background-image: url("https://wallpapercave.com/dwp2x/wp3255731.jpg");
-  background-repeat: no-repeat !important;
-  background-position: top center;
-  background-size: auto;
+  
 }
+
 
 #item-1:checked~.cardss #song-1,
 #item-2:checked~.cardss #song-2,
@@ -7479,15 +7476,30 @@ input[type=radio] {
   transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 1;
-  background-image: url("https://wallpapercave.com/dwp2x/wp3255731.jpg");
-  background-repeat: no-repeat !important;
-  background-position: top center;
-  background-size: auto;
-
+  
+  
 }
 
+*/
 
+#item-1:checked ~ .cardss #song-3, #item-2:checked ~ .cardss #song-1, #item-3:checked ~ .cardss #song-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
 
+#item-1:checked ~ .cardss #song-2, #item-2:checked ~ .cardss #song-3, #item-3:checked ~ .cardss #song-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cardss #song-1, #item-2:checked ~ .cardss #song-2, #item-3:checked ~ .cardss #song-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+
+}
 
 
 /* container css end */
@@ -12835,7 +12847,7 @@ textarea.form-control {
   font-family: 'Poppins', sans-serif;
 }
 
-.wrapper .button {
+/*.wrapper .button {
   display: inline-block;
   height: 60px;
   width: 60px;
@@ -12846,6 +12858,22 @@ textarea.form-control {
   border-radius: 80px;
   cursor: pointer;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+*/
+
+.wrapper .button {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  align-items: center;
+  margin: 0 40px;
+  /* margin-left: 415px; */
+  overflow: hidden;
+  background: #00cec9;
+  border-radius: 80px;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-out;
 }
 
